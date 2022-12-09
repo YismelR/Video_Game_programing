@@ -37,7 +37,7 @@ public class Zombies extends Soldier{
 	}
 	
 	public boolean attack(){
-		if(x <= 10) {
+		if(s.x <= 10) {
 			return true;
 		}
 		return false;
