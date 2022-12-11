@@ -1,7 +1,7 @@
-public class Setter {
+public class SetObj {
 	Panel p;
 	
-	public 	Setter(Panel p) {
+	public 	SettObj(Panel p) {
 		this.p = p;
 	}
 	
