@@ -49,8 +49,4 @@ public class Zombies extends Soldier{
 		}
 		return false;
 	}
-	
-	public void draw(Graphics g) {
-		g.drawImage(anim[pose].currentImage(), x - Camera.x, y - Camera.y, w/2, h/2, null);
-	}
 }
