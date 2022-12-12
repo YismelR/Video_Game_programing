@@ -37,14 +37,14 @@ public class Zombies extends Soldier{
 	//which contains "health_status", it wont work here. Rather, create this
 	//constructor in GameF22 instead for better results
 	public boolean dead(){
-		if(health < 0) {
+		if(health == 0) {
 			return true;
 		}
 		return false;
 	}
 	
 	public boolean attack(){
-		if(s.x <= 10) {
+		if(s.x < 10) {
 			return true;
 		}
 		return false;
