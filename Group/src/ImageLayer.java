@@ -1,4 +1,4 @@
-package com.main;
+
 import java.awt.*;
 
 public class ImageLayer {

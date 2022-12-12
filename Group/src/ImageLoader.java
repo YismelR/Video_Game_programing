@@ -1,4 +1,3 @@
-package com.main;
 import java.awt.*;
 import javax.swing.JFrame;
 

@@ -1,4 +1,4 @@
-package com.main;
+
 
 public class Camera {
 	static int x;

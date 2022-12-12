@@ -1,4 +1,3 @@
-package com.main;
 import java.awt.Graphics;
 import java.util.Random;
 
@@ -16,22 +15,22 @@ public class Level_1 extends GameBase{
 	
 	
 	//needs work
-	Zombie [] test = {
-	new Zombie(((width) + (width*1) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*2) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*3) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*4) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*5) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*6) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*7) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*8) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*9) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*10) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*11) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*12) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*13) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*14) / 4), height - 200, 27*3, 51*3),
-	new Zombie(((width) + (width*15) / 4), height - 200, 27*3, 51*3),
+	Zombies [] test = {
+	new Zombies(((width) + (width*1) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*2) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*3) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*4) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*5) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*6) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*7) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*8) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*9) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*10) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*11) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*12) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*13) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*14) / 4), height - 200, 27*3, 51*3),
+	new Zombies(((width) + (width*15) / 4), height - 200, 27*3, 51*3),
 };
 	public Level_1(GameBase game) {
 		active = false;	

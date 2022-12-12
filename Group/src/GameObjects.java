@@ -1,4 +1,4 @@
-package com.main;
+
 
 ////If all zombies are dead and main character overlaps 
 ////this door, assuming they are not on level six, they

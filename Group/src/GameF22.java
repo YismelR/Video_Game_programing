@@ -1,4 +1,4 @@
-package com.main;
+
 
 import java.awt.Graphics;
 import java.awt.Image;
@@ -13,7 +13,7 @@ public class GameF22 extends GameBase {
 	Image image = health.getImage();
 
 	//needs more work
-	Zombie zombie;
+	Zombies zombie;
 	Soldier soldier = new Soldier(width / 2, height - 280, 27*4, 51*4);
 	//in-game markers
 	GameObjects rightarrow;
