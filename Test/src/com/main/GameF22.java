@@ -746,6 +746,12 @@ public class GameF22 extends GameBase {
 		
 	}
 	
+	public boolean dead(){
+		if(health_status == 0) {
+			return true;
+		}
+		return false;
+	}
 
 	public void paint(Graphics g) {	
 		
