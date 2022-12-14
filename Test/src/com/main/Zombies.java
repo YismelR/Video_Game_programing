@@ -17,7 +17,7 @@ public class Zombies extends Soldier{
 	
 	int pose = WALK;
 
-	int health_status = GameBase.health_status;
+	int health_status = 100;
 	
 	Soldier s;
 	
