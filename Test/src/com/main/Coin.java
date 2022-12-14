@@ -19,10 +19,10 @@ public class Coin extends Rect{
 		
 		anim = new Animation[1];
 		
-		String [] pose = {"sp"};
+		String [] pose = {"coin"};
 		
 		for(int i = 0; i < anim.length; i++) {
-			anim[i] = new Animation("coin_" + pose[i] + "_", 9, ".GIF", 5);
+			anim[i] = new Animation("new_" + pose[i] + "_", 16, ".GIF", 5);
 		}
 	}
 	
