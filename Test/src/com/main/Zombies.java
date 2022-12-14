@@ -33,6 +33,20 @@ public class Zombies extends Soldier{
 		}
 	}
 	
+	public void chase(Soldier soldier) { 
+		if(Math.abs(x - soldier.x) < 300 ) {
+			
+		if (x > soldier.x)   moveLeft(2);
+		else
+		if (x < soldier.x)   moveRight(2);
+		
+		}
+		
+		else
+		setVelocity(0, 0);   
+		
+	}
+	
 	//Just a heads up, "health_status" should be used in-place of health
 	//but, because neither zombies.java or soldier.java extends gamebase,
 	//which contains "health_status", it wont work here. Rather, create this
