@@ -802,6 +802,10 @@ public class GameF22 extends GameBase {
 		
 		soldier.draw(g);
 		
+		c = new Coin(z.x, z.y, 36, 36);
+		if(z.dead() == true){
+		  c.draw(g);
+		}
 		
 		// Health bar needs work and is in progress
 		Integer health = new Integer(health_status);
