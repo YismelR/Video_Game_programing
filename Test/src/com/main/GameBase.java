@@ -41,33 +41,6 @@ public abstract class GameBase extends Applet implements Runnable, KeyListener {
 	static boolean isPaused = false; // check if game is paused
 	static boolean levelPassed = false; // check if current level is passed
 	static boolean gameComplete = false;
-	
-	
-	// MainMenu screen options check
-	static boolean menuStartGame = false;
-	static boolean menuCredits = false;
-	static boolean menuQuitGame = false;
-
-	// Pause menu screen options check
-	static boolean pauseResumeGame = false;
-	static boolean pauseMainMenu = false;
-	static boolean pauseQuitGame = false;
-
-	// Game Over screen options check
-	static boolean overPlayAgain = false;
-	static boolean overQuitGame = false;
-	static boolean overMainMenu = false;
-
-	// level complete screen options check
-	static boolean levelPlayAgain = false;
-	static boolean levelQuitGame = false;
-	static boolean levelMainMenu = false;
-	static boolean levelNextLevel = false;
-
-	// game complete screen options check
-	static boolean completeMainMenu = false;
-	static boolean completeQuit = false;
-	static boolean completePlayAgain = false;
 
 	boolean[] pressing = new boolean[1024];
 
