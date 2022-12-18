@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.ArrayList;
 
 public class Soldier extends Rect {
 	
@@ -23,21 +24,27 @@ public class Soldier extends Rect {
 	static final int LT = 2;
 	static final int RT = 3;
 
+	static final int ATTACKLT = 4;
+	static final int ATTACKRT = 5;
 	int pose = RT;
 
 	boolean moving = false;
+	
+
 
 	public Soldier(int x, int y, int w, int h) {
 		super(x, y, w, h);
-		anim = new Animation[4];
+		anim = new Animation[6];
 
-		String[] pose = {"up", "dn","lt", "rt"};
+		String[] pose = {"up", "dn","lt", "rt", "gunlt", "gunrt"};
 
 		for (int i = 0; i < anim.length; i++) {
-			anim[i] = new Animation("g_" + pose[i] + "_", 5, ".gif", 10);
+			anim[i] = new Animation("g_" + pose[i] + "_", 5, ".png", 10);
+			
 		}
 	}
 
+	
 	public void move() {
 		this.vy = -vy;
 	}
@@ -45,6 +52,7 @@ public class Soldier extends Rect {
 	public void jump(int vy) {
 		this.vy = -vy;
 	}
+
 
 	public void setVelocity(int vx, int vy) {
 		this.vx = vx;
@@ -63,7 +71,20 @@ public class Soldier extends Rect {
 		vx += ax;
 		vy += ay;
 	}
+	
+	public void takeWeaponLT() {
+		if(pose == LT) {
+		pose = ATTACKLT;
+		}
+		moving = true;
+	}
 
+	public void takeWeaponRT() {
+		if(pose == RT) {
+		pose = ATTACKRT;
+		}
+		moving = true;
+	}
 	public void moveLeft(int dx) {
 		vx = -dx;
 
