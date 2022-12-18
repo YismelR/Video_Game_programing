@@ -158,4 +158,3 @@ public class Soldier extends Rect {
 		moving = false;
 		// g.drawRect(x, y, w, h);
 	}
-}
